@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+</head>
+<body>
+  <h1>SNS for Engineer</h1>
+  <h2>ホーム/一覧表示</h2>
+  <a href="/">トップに戻る</a><br>
+  <% for(let i in content) { %>
+    <% let obj = content[i]; %>
+    id: <%= obj.id %><br>
+    <%= obj.text %><br>
+    投稿日時：<%= created_at[i] %>
+    <p>-------------------------------------------------------------------------------</p><br>
+  <% } %>
+</body>
+</html>

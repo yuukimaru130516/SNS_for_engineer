@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ユーザー/一覧表示</title>
+</head>
+<body>
+  <h1>SNS for Engineer</h1>
+  <h2>ユーザー/一覧表示</h2>
+  <a href="/">トップに戻る</a><br>
+  <% for(let i in content) { %>
+    <% let User = content[i]; %>
+    ユーザー名: <%= User.name %><br>
+    ひとこと<br><%= User.description %><br>
+    登録日：<%= created_at[i] %>
+    <p>-------------------------------------------------------------------------------</p><br>
+  <% } %>
+  
+</body>
+</html>
